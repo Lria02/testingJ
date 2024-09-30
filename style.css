@@ -22,7 +22,7 @@ header {
 .charIMG img {
     display: flex;
     position: fixed;
-    margin-top: 10%;
+    margin-top: 15%;
     left: 0;
     margin-left: 5%;
     max-width: 400px;
@@ -31,7 +31,7 @@ header {
 .spiritIMG img {
     display: flex;
     position: fixed;
-    margin-top: 6%;
+    margin-top: 11%;
     left: 0;
     margin-left: 10.2%;
     max-width: 400px;
