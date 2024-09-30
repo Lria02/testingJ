@@ -1,3 +1,4 @@
+/* General styles (applied to desktop by default) */
 body {
     display: flex;
     justify-content: center;
@@ -22,22 +23,22 @@ header {
 .charIMG img {
     display: flex;
     position: fixed;
-    margin-top: 15%;
+    bottom: 0;
     left: 0;
     margin-left: 5%;
     max-width: 400px;
     max-height: 800px;
 }
+
 .spiritIMG img {
     display: flex;
     position: fixed;
-    margin-top: 11%;
+    bottom: 0;
     left: 0;
     margin-left: 10.2%;
     max-width: 400px;
     max-height: 800px;
 }
-
 
 .information-container {
     position: fixed;
@@ -63,7 +64,7 @@ header {
     margin: 0 auto;  /* Centers the image horizontally if it's smaller than the container */
 }
 
-#Story-Button, #Active-Button, #Passive-Button, #Party-Button { /* Updated selector */
+#Story-Button, #Active-Button, #Passive-Button, #Party-Button {
     text-align: center;
     background-color: rgb(30, 30, 124);
     color: white;
@@ -81,3 +82,57 @@ header {
 .info {
     display: none;
 }
+
+/* Mobile view styles: Adjust styles for screens smaller than 768px */
+@media only screen and (max-width: 768px) {
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(74, 179, 239); 
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .information-container {
+        position: fixed;
+        top: 10%;
+        margin-top: 5%;
+        margin-left: 2%;
+        width: 300px;
+        border: 2px solid rgb(14, 139, 158);
+        background-color: rgb(14, 139, 158);
+        padding: 20px;
+        padding-right: 40px;
+        max-height: 500px;
+        overflow-y: auto;
+    }
+    .button-container {
+        display: flex;
+        justify-content: space-between; /* Even spacing between buttons */
+    }
+
+    .charIMG img {
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        margin-left: 5%;
+        max-width: 400px;
+        max-height: 800px;
+    }
+    
+    .spiritIMG img {
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        margin-left: 23%;
+        max-width: 400px;
+        max-height: 800px;
+    }
+
+
+
+}
+
