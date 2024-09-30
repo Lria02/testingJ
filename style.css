@@ -1,0 +1,83 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(74, 179, 239); 
+    max-width: 1920px;
+    max-height: 1080px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header {
+    text-align: center;
+    color: white;
+    background-color: rgb(50, 48, 48);
+    width: 100%;
+    padding: 10px;
+    font-size: 40px;
+    position: fixed;
+    top: 0;
+}
+
+.charIMG img {
+    display: flex;
+    position: fixed;
+    margin-top: 10%;
+    left: 0;
+    margin-left: 5%;
+    max-width: 400px;
+    max-height: 800px;
+}
+.spiritIMG img {
+    display: flex;
+    position: fixed;
+    margin-top: 6%;
+    left: 0;
+    margin-left: 10.2%;
+    max-width: 400px;
+    max-height: 800px;
+}
+
+
+.information-container {
+    position: fixed;
+    top: 10%;
+    margin-top: 5%;
+    margin-left: 50%;
+    width: 400px;
+    border: 2px solid green;
+    padding: 20px;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between; /* Even spacing between buttons */
+}
+
+.imgProof img {
+    max-width: 100%;  /* Ensures the image scales down if it exceeds the container's width */
+    max-height: 250px;  /* Sets a maximum height */
+    display: block;  /* Ensures there's no extra space below the image */
+    margin: 0 auto;  /* Centers the image horizontally if it's smaller than the container */
+}
+
+#Story-Button, #Active-Button, #Passive-Button, #Party-Button { /* Updated selector */
+    text-align: center;
+    background-color: rgb(30, 30, 124);
+    color: white;
+    padding: 1%;
+    font-size: 25px;
+    border-radius: 15%;
+    margin: 5px;
+    cursor: pointer;
+    flex: 1; /* Make buttons equal width */
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/* Hide the information initially */
+.info {
+    display: none;
+}
