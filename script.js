@@ -13,3 +13,14 @@ function toggleInfo(id) {
         selectedInfo.style.display = 'block';
     }
 }
+
+function isMobile() {
+    return /Mobi|Android/i.test(navigator.userAgent);
+}
+
+// Check if the user is on mobile
+if (isMobile()) {
+    // Hide desktop content and show mobile content
+    document.body.querySelector('.information-container').style.display = 'none';
+    document.getElementById('mobile-content').style.display = 'block';
+}
